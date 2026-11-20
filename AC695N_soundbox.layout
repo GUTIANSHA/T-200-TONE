@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<FileVersion major="1" minor="0" />
+	<ActiveTarget name="Release" />
+	<File name="apps\soundbox\board\br23\board_config.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2807" topLine="58" />
+		</Cursor>
+	</File>
+	<File name="apps\soundbox\task_manager\bt\vol_sync.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2971" topLine="97" />
+		</Cursor>
+	</File>
+	<File name="include_lib\system\debug.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2742" topLine="88" />
+		</Cursor>
+	</File>
+	<File name="apps\common\usb\usb_common_def.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2382" topLine="53" />
+		</Cursor>
+	</File>
+	<File name="apps\soundbox\ui\led7\ui_bt.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1873" topLine="88" />
+		</Cursor>
+	</File>
+	<File name="cpu\br23\audio_mic\mic_effect.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="53103" topLine="1666" />
+		</Cursor>
+	</File>
+	<File name="apps\soundbox\task_manager\app_common.c" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="46138" topLine="1696" />
+		</Cursor>
+	</File>
+	<File name="apps\soundbox\ui\led7\ui_spdif.c" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="156" topLine="1" />
+		</Cursor>
+	</File>
+	<File name="apps\soundbox\log_config\lib_media_config.c" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="9870" topLine="259" />
+		</Cursor>
+	</File>
+	<File name="include_lib\system\user_cfg.h" open="1" top="0" tabpos="15" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="783" topLine="16" />
+		</Cursor>
+	</File>
+	<File name="apps\common\third_party_profile\tuya_protocol\app\product_test\tuya_ble_app_production_test.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1719" topLine="42" />
+		</Cursor>
+	</File>
+	<File name="apps\soundbox\include\tone_player.h" open="1" top="0" tabpos="19" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="8767" topLine="262" />
+		</Cursor>
+	</File>
+	<File name="apps\common\include\update_tws.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="82" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="cpu\br23\audio_effect\audio_eq_drc_demo.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="13950" topLine="487" />
+		</Cursor>
+	</File>
+	<File name="apps\soundbox\task_manager\spdif\hdmi_cec_drv.c" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="24713" topLine="877" />
+		</Cursor>
+	</File>
+	<File name="apps\soundbox\board\br23\board_ac695x_demo\board_ac695x_demo.c" open="1" top="1" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="14043" topLine="311" />
+		</Cursor>
+	</File>
+	<File name="apps\soundbox\board\br23\board_ac695x_demo\key_table\irkey_table.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="287" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="apps\soundbox\task_manager\linein\linein.c" open="1" top="0" tabpos="13" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="8472" topLine="307" />
+		</Cursor>
+	</File>
+	<File name="apps\common\key\irkey.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4835" topLine="179" />
+		</Cursor>
+	</File>
+	<File name="apps\soundbox\app_main.c" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2376" topLine="86" />
+		</Cursor>
+	</File>
+	<File name="cpu\br23\audio_mic\effect_reg.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1096" topLine="16" />
+		</Cursor>
+	</File>
+	<File name="apps\soundbox\board\br23\board_ac695x_demo\key_table\adkey_table.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="305" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="apps\soundbox\task_manager\power_on\power_on.c" open="1" top="0" tabpos="18" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2384" topLine="86" />
+		</Cursor>
+	</File>
+	<File name="apps\common\ui\led7\led7_ui_api.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1616" topLine="63" />
+		</Cursor>
+	</File>
+	<File name="cpu\br23\audio_config.h" open="1" top="0" tabpos="10" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="107" topLine="1" />
+		</Cursor>
+	</File>
+	<File name="apps\soundbox\include\ui\style_led7.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1200" topLine="66" />
+		</Cursor>
+	</File>
+	<File name="apps\soundbox\task_manager\music\music.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="22975" topLine="625" />
+		</Cursor>
+	</File>
+	<File name="apps\soundbox\common\dev_status.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4555" topLine="136" />
+		</Cursor>
+	</File>
+	<File name="include_lib\system\device\adkey.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="117" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="apps\common\device\gSensor\SC7A20.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="137" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="cpu\br23\audio_common\app_audio.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="14945" topLine="505" />
+		</Cursor>
+	</File>
+	<File name="include_lib\system\os\FreeRTOS\pi32v2\portmacro.h" open="1" top="0" tabpos="11" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="7402" topLine="189" />
+		</Cursor>
+	</File>
+	<File name="cpu\br23\audio_dec\audio_dec.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="30071" topLine="1025" />
+		</Cursor>
+	</File>
+	<File name="cpu\br23\audio_effect\eq_config.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="8970" topLine="257" />
+		</Cursor>
+	</File>
+	<File name="apps\soundbox\include\app_config.h" open="1" top="0" tabpos="12" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="9807" topLine="298" />
+		</Cursor>
+	</File>
+	<File name="apps\common\music\music_player.c" open="1" top="0" tabpos="16" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="8957" topLine="278" />
+		</Cursor>
+	</File>
+	<File name="apps\common\config\include\bt_profile_cfg.h" open="1" top="0" tabpos="22" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="116" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="cpu\br23\audio_effect\audio_voice_changer_demo.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="403" topLine="0" />
+		</Cursor>
+	</File>
+	<File name="apps\soundbox\task_manager\spdif\spdif.c" open="1" top="0" tabpos="20" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5173" topLine="201" />
+		</Cursor>
+	</File>
+	<File name="apps\common\config\bt_profile_config.c" open="1" top="0" tabpos="21" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4616" topLine="135" />
+		</Cursor>
+	</File>
+	<File name="include_lib\media\media_develop\media\cpu\br23\asm\dac.h" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2782" topLine="75" />
+		</Cursor>
+	</File>
+	<File name="apps\soundbox\log_config\lib_system_config.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1860" topLine="58" />
+		</Cursor>
+	</File>
+	<File name="cpu\br23\ui_driver\led7\led7_driver.c" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="26660" topLine="944" />
+		</Cursor>
+	</File>
+	<File name="cpu\br23\adc_api.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="9750" topLine="453" />
+		</Cursor>
+	</File>
+	<File name="include_lib\system\timer.h" open="1" top="0" tabpos="17" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5931" topLine="175" />
+		</Cursor>
+	</File>
+	<File name="apps\soundbox\task_manager\app_task_switch.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3796" topLine="146" />
+		</Cursor>
+	</File>
+	<File name="apps\soundbox\task_manager\task_key.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="3617" topLine="103" />
+		</Cursor>
+	</File>
+	<File name="apps\soundbox\ui\led7\ui_linein.c" open="1" top="0" tabpos="14" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1143" topLine="34" />
+		</Cursor>
+	</File>
+	<File name="apps\soundbox\log_config\lib_driver_config.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="8497" topLine="146" />
+		</Cursor>
+	</File>
+	<File name="apps\soundbox\ui\led7\ui_common.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="5963" topLine="276" />
+		</Cursor>
+	</File>
+	<File name="apps\soundbox\common\user_cfg_new.c" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="92680" topLine="3637" />
+		</Cursor>
+	</File>
+	<File name="apps\soundbox\board\br23\board_ac695x_demo\board_ac695x_demo_cfg.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="58849" topLine="1399" />
+		</Cursor>
+	</File>
+	<File name="apps\soundbox\common\init.c" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2448" topLine="113" />
+		</Cursor>
+	</File>
+	<File name="apps\common\key\adkey.c" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="858" topLine="0" />
+		</Cursor>
+	</File>
+</CodeBlocks_layout_file>

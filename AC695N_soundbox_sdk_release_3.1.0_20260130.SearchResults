@@ -1,0 +1,31 @@
+---- user_fun_init Matches (30 in 29 files) ----
+Init.c (apps\soundbox\common):	user_fun_init();
+Sdk.elf.resolution.txt (cpu\br23\tools):-r=obj/Release/apps/soundbox/common/init.o,user_fun_init,l
+Sdk.elf.resolution.txt (cpu\br23\tools):-r=obj/Release/apps/soundbox/common/user_cfg_new.o,user_fun_init,pl
+SPI1_RGB_DG_1257_73.c (apps\soundbox\common):void user_fun_init(void){
+SPI1_RGB_DG_1257_79.c (apps\soundbox\common):void user_fun_init(void){
+SPI1_RGB_DG_1258_106.c (apps\soundbox\common):void user_fun_init(void){
+SPI1_RGB_DG_1263_2.c (apps\soundbox\common):void user_fun_init(void){
+SPI1_RGB_DS4751C_FL872.c (apps\soundbox\common):void user_fun_init(void){
+SPI1_RGB_LH_808_20.c (apps\soundbox\common):void user_fun_init(void){
+SPI1_RGB_RT_32LED.c (apps\soundbox\common):void user_fun_init(void){
+SPI1_RGB_sub2100.c (apps\soundbox\common):void user_fun_init(void){
+SPI1_RGB_TEST_NUMBERS_OF_RGB.c (apps\soundbox\common):void user_fun_init(void){
+SPI_RGB_JY_118LED_TX_2810.c (apps\soundbox\common):void user_fun_init(void){
+SPI_RGB_JY_124LED_TX_2310.c (apps\soundbox\common):void user_fun_init(void){
+SPI_RGB_JY_12LED.c (apps\soundbox\common):void user_fun_init(void){
+SPI_RGB_JY_18LED.c (apps\soundbox\common):void user_fun_init(void){
+SPI_RGB_JY_24LED.c (apps\soundbox\common):void user_fun_init(void){
+SPI_RGB_JY_24LED_GB8.c (apps\soundbox\common):void user_fun_init(void){
+SPI_RGB_JY_28LED.c (apps\soundbox\common):void user_fun_init(void){
+SPI_RGB_JY_28LED_GB12.c (apps\soundbox\common):void user_fun_init(void){
+SPI_RGB_JY_28LED_GB15.c (apps\soundbox\common):void user_fun_init(void){
+SPI_RGB_JY_40LED_GB15.c (apps\soundbox\common):void user_fun_init(void){
+SPI_RGB_JY_48LED_TX_2208.c (apps\soundbox\common):void user_fun_init(void){
+SPI_RGB_JY_56LED_TX_2210.c (apps\soundbox\common):void user_fun_init(void){
+SPI_RGB_JY_64LED_TX_2212.c (apps\soundbox\common):void user_fun_init(void){
+SPI_RGB_JY_88LED_TX_2608.c (apps\soundbox\common):void user_fun_init(void){
+SPI_RGB_JY_TX_2308.c (apps\soundbox\common):void user_fun_init(void){
+SPI_RGB_JY_TX_2580_50RGB.c (apps\soundbox\common):void user_fun_init(void){
+SPI_RGB_JY_TX_2728_32RGB.c (apps\soundbox\common):void user_fun_init(void){
+Symbol_tbl.txt (cpu\br23\tools):01e6096c l     F .text		 000001c4 user_fun_init

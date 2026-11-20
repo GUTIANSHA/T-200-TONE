@@ -1,0 +1,381 @@
+
+
+/*
+#define KEY0_RES         0   		//pp
+#define KEY1_RES         33 		//ECHO+
+#define KEY2_RES         62 		//ECHO-
+#define KEY3_RES         91   	//DELAY-
+#define KEY4_RES         150 	//DELAY+
+#define KEY5_RES         240	//PREV/MIC
+#define KEY6_RES         330 	//NEXT/RPT
+#define KEY7_RES         510       // MODE
+#define KEY8_RES         1000 	// RGBONOFF
+#define KEY9_RES         2200     //TWS
+*/ 
+
+ /***********************************************************
+  * 			 bt 模式的 adkey table
+  ***********************************************************/
+ 
+#if TCFG_APP_BT_EN
+ 
+ const u16 bt_key_ad_table[KEY_AD_NUM_MAX][KEY_EVENT_MAX] = {
+	 //单击 			//长按			//hold		   //抬起			 //双击 			   //三击
+	 [0] = {
+		 KEY_MUSIC_PP,	 KEY_NULL, KEY_NULL,			 KEY_NULL,		 KEY_NULL,	 KEY_NULL
+	 },
+	 [1] = {
+		 KEY_ECHO_UP,			KEY_ECHO_UP,			 KEY_ECHO_UP,			 KEY_NULL,		 KEY_NULL,		 KEY_NULL
+	 },
+	 [2] = {
+		 KEY_ECHO_DN, KEY_ECHO_DN,		 KEY_ECHO_DN,		 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [3] = {
+		 KEY_MIC_DELAY_DN,			KEY_MIC_DELAY_DN,			 KEY_MIC_DELAY_DN,			 KEY_NULL,		 KEY_NULL,		 KEY_NULL
+	 },
+	 [4] = {
+		 KEY_MIC_DELAY_UP,			KEY_MIC_DELAY_UP,			 KEY_MIC_DELAY_UP,			 KEY_NULL,		 KEY_NULL,		 KEY_NULL
+	 },
+	 [5] = {
+		 KEY_MUSIC_PREV,   KEY_MIC_ONOFF,	 KEY_NULL,	 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [6] = {
+		 KEY_MUSIC_NEXT,   KEY_MUSIC_CHANGE_REPEAT,	 KEY_NULL,	 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [7] = {
+		 KEY_CHANGE_MODE,		KEY_NULL,			 KEY_NULL,			 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [8] = {
+		 KEY_RGB_ONOFF,		 KEY_NULL,			 KEY_NULL,			 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [9] = {
+		 KEY_TWS_SEARCH_REMOVE_PAIR,	 KEY_NULL,			 KEY_NULL,			KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+ };
+
+#endif
+ 
+ /***********************************************************
+  * 			 fm 模式的 adkey table
+  ***********************************************************/
+#if TCFG_APP_FM_EN
+ const u16 fm_key_ad_table[KEY_AD_NUM_MAX][KEY_EVENT_MAX] = {
+	 //单击 			//长按			//hold		   //抬起			 //双击 			   //三击
+	 [0] = {
+		 KEY_FM_SCAN_ALL,	 KEY_NULL, KEY_NULL,			 KEY_NULL,		 KEY_NULL,	 KEY_NULL
+	 },
+	 [1] = {
+		 KEY_ECHO_UP,			KEY_ECHO_UP,			 KEY_ECHO_UP,			 KEY_NULL,		 KEY_NULL,		 KEY_NULL
+	 },
+	 [2] = {
+		 KEY_ECHO_DN, KEY_ECHO_DN,		 KEY_ECHO_DN,		 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [3] = {
+		 KEY_MIC_DELAY_DN,			KEY_MIC_DELAY_DN,			 KEY_MIC_DELAY_DN,			 KEY_NULL,		 KEY_NULL,		 KEY_NULL
+	 },
+	 [4] = {
+		 KEY_MIC_DELAY_UP,			KEY_MIC_DELAY_UP,			 KEY_MIC_DELAY_UP,			 KEY_NULL,		 KEY_NULL,		 KEY_NULL
+	 },
+	 [5] = {
+		 KEY_FM_PREV_STATION,   KEY_MIC_ONOFF,	 KEY_NULL,	 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [6] = {
+		 KEY_FM_NEXT_STATION,   KEY_NULL,	 KEY_NULL,	 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [7] = {
+		 KEY_CHANGE_MODE,		 KEY_NULL,			 KEY_NULL,			 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [8] = {
+		 KEY_RGB_ONOFF,		 KEY_NULL,			 KEY_NULL,			 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [9] = {
+		 KEY_NULL,	 KEY_NULL,			 KEY_NULL,			KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },	 
+	 
+ };	 
+
+#endif
+ 
+ /***********************************************************
+  * 			 linein 模式的 adkey table
+  ***********************************************************/
+#if TCFG_APP_LINEIN_EN
+ const u16 linein_key_ad_table[KEY_AD_NUM_MAX][KEY_EVENT_MAX] = {
+	 //单击 			//长按			//hold		   //抬起			 //双击 			   //三击
+	 [0] = {
+		 KEY_MUSIC_PP,	 KEY_NULL, KEY_NULL,			 KEY_NULL,		 KEY_NULL,	 KEY_NULL
+	 },
+	 [1] = {
+		 KEY_ECHO_UP,			KEY_ECHO_UP,			 KEY_ECHO_UP,			 KEY_NULL,		 KEY_NULL,		 KEY_NULL
+	 },
+	 [2] = {
+		 KEY_ECHO_DN, KEY_ECHO_DN,		 KEY_ECHO_DN,		 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [3] = {
+		 KEY_MIC_DELAY_DN,			KEY_MIC_DELAY_DN,			 KEY_MIC_DELAY_DN,			 KEY_NULL,		 KEY_NULL,		 KEY_NULL
+	 },
+	 [4] = {
+		 KEY_MIC_DELAY_UP,			KEY_MIC_DELAY_UP,			 KEY_MIC_DELAY_UP,			 KEY_NULL,		 KEY_NULL,		 KEY_NULL
+	 },
+	 [5] = {
+		 KEY_NULL,   KEY_MIC_ONOFF,	 KEY_NULL,	 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [6] = {
+		 KEY_NULL,   KEY_NULL,	 KEY_NULL,	 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [7] = {
+		 KEY_CHANGE_MODE,		 KEY_NULL,			 KEY_NULL,			 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [8] = {
+		 KEY_RGB_ONOFF,		 KEY_NULL,			 KEY_NULL,			 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [9] = {
+		 KEY_NULL,	 KEY_NULL,			 KEY_NULL,			KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },	 
+			 
+ };
+#endif
+ 
+ /***********************************************************
+  * 			 music 模式的 adkey table
+  ***********************************************************/
+#if TCFG_APP_MUSIC_EN
+ 
+ const u16 music_key_ad_table[KEY_AD_NUM_MAX][KEY_EVENT_MAX] = {
+	 //单击 			//长按			//hold		   //抬起			 //双击 			   //三击
+	 [0] = {
+		 KEY_MUSIC_PP,	 KEY_REC_MODE, KEY_NULL,			 KEY_NULL,		 KEY_NULL,	 KEY_NULL
+	 },
+	 [1] = {
+		 KEY_ECHO_UP,			KEY_ECHO_UP,			 KEY_ECHO_UP,			 KEY_NULL,		 KEY_NULL,		 KEY_NULL
+	 },
+	 [2] = {
+		 KEY_ECHO_DN, KEY_ECHO_DN,		 KEY_ECHO_DN,		 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [3] = {
+		 KEY_MIC_DELAY_DN,			KEY_MIC_DELAY_DN,			 KEY_MIC_DELAY_DN,			 KEY_NULL,		 KEY_NULL,		 KEY_NULL
+	 },
+	 [4] = {
+		 KEY_MIC_DELAY_UP,			KEY_MIC_DELAY_UP,			 KEY_MIC_DELAY_UP,			 KEY_NULL,		 KEY_NULL,		 KEY_NULL
+	 },
+	 [5] = {
+		 KEY_MUSIC_PREV,   KEY_MIC_ONOFF,	 KEY_NULL,	 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [6] = {
+		 KEY_MUSIC_NEXT,   KEY_MUSIC_CHANGE_REPEAT,	 KEY_NULL,	 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [7] = {
+		 KEY_CHANGE_MODE,		 KEY_NULL,			 KEY_NULL,			 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [8] = {
+		 KEY_RGB_ONOFF,		 KEY_NULL,			 KEY_NULL,			 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [9] = {
+		 KEY_NULL,	 KEY_NULL,			 KEY_NULL,			KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },	 
+	
+ };
+#endif
+ 
+ /***********************************************************
+  * 			 pc 模式的 adkey table
+  ***********************************************************/
+#if TCFG_APP_PC_EN
+ const u16 pc_key_ad_table[KEY_AD_NUM_MAX][KEY_EVENT_MAX] = {
+	 //单击 			//长按			//hold		   //抬起			 //双击 			   //三击
+	 [0] = {
+		 KEY_NULL,	 KEY_NULL, KEY_NULL,			 KEY_NULL,		 KEY_NULL,	 KEY_NULL
+	 },
+	 [1] = {
+		 KEY_NULL, KEY_NULL,		 KEY_NULL,		 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [2] = {
+		 KEY_NULL, KEY_NULL,		 KEY_NULL,		 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [3] = {
+		 KEY_NULL,			KEY_NULL,			 KEY_NULL,			 KEY_NULL,		 KEY_NULL,		 KEY_NULL
+	 },
+	 [4] = {
+		 KEY_NULL,			KEY_NULL,			 KEY_NULL,			 KEY_NULL,		 KEY_NULL,		 KEY_NULL
+	 },
+	 [5] = {
+		 KEY_NULL,   KEY_NULL,	 KEY_NULL,	 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [6] = {
+		 KEY_NULL,		 KEY_NULL,			 KEY_NULL,			 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [7] = {
+		 KEY_NULL,		 KEY_NULL,			 KEY_NULL,			 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [8] = {
+		 KEY_NULL,		 KEY_NULL,			 KEY_NULL,			 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [9] = {
+		 KEY_NULL,	 KEY_NULL,			 KEY_NULL,			 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+
+ };
+#endif
+ 
+ /***********************************************************
+  * 			 record 模式的 adkey table
+  ***********************************************************/
+#if TCFG_APP_RECORD_EN
+ const u16 record_key_ad_table[KEY_AD_NUM_MAX][KEY_EVENT_MAX] = {
+	 //单击 			//长按			//hold		   //抬起			 //双击 			   //三击
+	 [0] = {
+		 KEY_REC_STOP,	 KEY_REC_STOP,	 KEY_NULL,			 KEY_NULL,		 KEY_NULL,	 KEY_NULL
+	 },
+	 [1] = {
+		 KEY_NULL,	 KEY_NULL,		 KEY_NULL,		 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [2] = {
+		 KEY_NULL,	 KEY_NULL,		 KEY_NULL,	 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [3] = {
+		 KEY_NULL,		 KEY_NULL,			 KEY_NULL,			 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [4] = {
+		 KEY_NULL,	  KEY_NULL, 		 KEY_NULL,			 KEY_NULL,		 KEY_NULL,	 KEY_NULL
+	 },
+	 [5] = {
+		 KEY_NULL,			KEY_NULL,			 KEY_NULL,			 KEY_NULL,		 KEY_NULL,		 KEY_NULL
+	 },
+	 [6] = {
+		 KEY_NULL,		 KEY_NULL,			 KEY_NULL,			 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [7] = {
+		 KEY_NULL,		 KEY_NULL,			 KEY_NULL,			 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [8] = {
+		 KEY_NULL,		 KEY_NULL,			 KEY_NULL,			 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [9] = {
+		 KEY_NULL,		 KEY_NULL,			 KEY_NULL,			 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+ 
+ };
+#endif
+ 
+ /***********************************************************
+  * 			 rtc 模式的 adkey table
+  ***********************************************************/
+#if TCFG_APP_RTC_EN
+ const u16 rtc_key_ad_table[KEY_AD_NUM_MAX][KEY_EVENT_MAX] = {
+	 //单击 			//长按			//hold		   //抬起			 //双击 			   //三击
+	 [0] = {
+		 KEY_CHANGE_MODE, KEY_POWEROFF, 	 KEY_POWEROFF_HOLD,  KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [1] = {
+		 KEY_RTC_DOWN,		 KEY_RTC_DOWN,	 KEY_RTC_DOWN,	 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [2] = {
+		 KEY_RTC_SW_POS,	 KEY_RTC_SW,	 KEY_NULL,		 KEY_NULL,		 KEY_NULL,				 KEY_NULL
+	 },
+	 [3] = {
+		 KEY_RTC_UP,		 KEY_RTC_UP,	 KEY_RTC_UP,	 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [4] = {
+		 KEY_NULL,			 KEY_NULL,		 KEY_NULL,		 KEY_NULL,		 KEY_REVERB_OPEN,				 KEY_NULL
+	 },
+	 [5] = {
+		 KEY_NULL,			 KEY_NULL,		 KEY_NULL,		 KEY_NULL,		 KEY_NULL,				 KEY_NULL
+	 },
+	 [6] = {
+		 KEY_NULL,			 KEY_NULL,		 KEY_NULL,		 KEY_NULL,		 KEY_NULL,				 KEY_NULL
+	 },
+	 [7] = {
+		 KEY_NULL,		 KEY_NULL,			 KEY_NULL,			 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [8] = {
+		 KEY_NULL,		 KEY_NULL,			 KEY_NULL,			 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [9] = {
+		 KEY_NULL,		 KEY_NULL,			 KEY_NULL,			 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+ 
+ };
+#endif
+ 
+ /***********************************************************
+  * 			 spdif 模式的 adkey table
+  ***********************************************************/
+#if TCFG_APP_SPDIF_EN
+ const u16 spdif_key_ad_table[KEY_AD_NUM_MAX][KEY_EVENT_MAX] = {
+	 //单击 			//长按			//hold		   //抬起			 //双击 			   //三击
+	 [0] = {
+		 KEY_CHANGE_MODE, KEY_POWEROFF, 	 KEY_POWEROFF_HOLD,  KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [1] = {
+		 KEY_NULL,			 KEY_NULL,		 KEY_NULL,			 KEY_NULL,		 KEY_NULL,				 KEY_NULL
+	 },
+	 [2] = {
+		 KEY_MUSIC_PP,		 KEY_POWEROFF,	 KEY_POWEROFF_HOLD,  KEY_NULL,		 KEY_NULL,				 KEY_NULL
+	 },
+	 [3] = {
+		 KEY_NULL,			 KEY_NULL,		 KEY_NULL,			 KEY_NULL,		 KEY_NULL,				 KEY_NULL
+	 },
+	 [4] = {
+		 KEY_NULL,			 KEY_NULL,		 KEY_NULL,			 KEY_NULL,		 KEY_SPDIF_SW_SOURCE,	 KEY_NULL
+	 },
+	 [5] = {
+		 KEY_NULL,			 KEY_NULL,		 KEY_NULL,			 KEY_NULL,		 KEY_NULL,				 KEY_NULL
+	 },
+	 [6] = {
+		 KEY_NULL,			 KEY_NULL,		 KEY_NULL,			 KEY_NULL,		 KEY_SPDIF_SW_SOURCE,	 KEY_NULL
+	 },
+	 [7] = {
+		 KEY_NULL,		 KEY_NULL,			 KEY_NULL,			 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [8] = {
+		 KEY_NULL,		 KEY_NULL,			 KEY_NULL,			 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [9] = {
+		 KEY_NULL,		 KEY_NULL,			 KEY_NULL,			 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+ 
+ };
+#endif
+ 
+ /***********************************************************
+  * 			 idle 模式的 adkey table
+  ***********************************************************/
+ const u16 idle_key_ad_table[KEY_AD_NUM_MAX][KEY_EVENT_MAX] = {
+	 //单击 			//长按			//hold		   //抬起			 //双击 			   //三击
+	 [0] = {
+		 KEY_NULL,		 KEY_NULL,		 KEY_NULL,	 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [1] = {
+		 KEY_NULL,		 KEY_NULL,			 KEY_NULL,			 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [2] = {
+		 KEY_NULL,		 KEY_NULL,			 KEY_NULL,			 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [3] = {
+		 KEY_NULL,		 KEY_NULL,			 KEY_NULL,			 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [4] = {
+		 KEY_NULL,		 KEY_NULL,			 KEY_NULL,			 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [5] = {
+		 KEY_NULL,		 KEY_NULL,			 KEY_NULL,			 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [6] = {
+		 KEY_NULL,		 KEY_NULL,			 KEY_NULL,			 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [7] = {
+		 KEY_NULL,		 KEY_NULL,			 KEY_NULL,			 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [8] = {
+		 KEY_NULL,		 KEY_NULL,			 KEY_NULL,			 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+	 [9] = {
+		 KEY_NULL,		 KEY_NULL,			 KEY_NULL,			 KEY_NULL,		 KEY_NULL,			 KEY_NULL
+	 },
+ 
+ };
+ 
+ 
+ 
+ 
+ 
