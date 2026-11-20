@@ -3,6 +3,7 @@
 #include "app_config.h"
 #include "bt/vol_sync.h"
 #include "tone_player.h"
+#include "btstack/avctp_user.h"
 
 #if TCFG_APP_BT_EN
 
@@ -90,7 +91,8 @@ void set_music_device_volume(int volume)
    //     printf("\n--11111---jsuo ---- vol\n");
 
     //音量同步最大是127，请计数比例
-    if (volume > 127) {
+    if (volume > 127)
+    {
         /*log_info("vol %d invalid\n",  volume);*/
 #if TCFG_VOL_RESET_WHEN_NO_SUPPORT_VOL_SYNC
         /*不支持音量同步的设备，默认设置到最大值，可以根据实际需要进行修改。
@@ -101,7 +103,12 @@ void set_music_device_volume(int volume)
 #endif
         return;
     }
-    if (tone_get_status() || get_esco_busy_flag()) {
+    if (volume == app_var.opid_play_vol_sync) {
+        //手机回传的正是本机刚上报的音量，本地已经生效，不需要再设置
+        return;
+    }
+    if (tone_get_status() || get_esco_busy_flag()) 
+    {
         log_i("It's not smart to sync a2dp vol now\n");
         app_var.music_volume = vol_sys_tab[(volume + 1) / 8];
         return;
@@ -129,6 +136,25 @@ int phone_get_device_vol(void)
     return (app_var.sys_vol_l * get_max_sys_vol() / 127) ;
 #else
     return app_var.opid_play_vol_sync;
+#endif
+}
+
+//按键调整本地音量后，以实际音量为准按17档表换算后上报给手机
+void bt_vol_sync_to_phone(void)
+{
+#if BT_SUPPORT_MUSIC_VOL_SYNC
+    u8 vol = app_audio_get_volume(APP_AUDIO_STATE_MUSIC);
+    u8 max_vol = get_max_sys_vol();
+    u8 idx = 0;
+
+    app_var.music_volume = vol;
+    if (max_vol) {
+        idx = (vol * 16 + max_vol / 2) / max_vol;
+        if (idx > 16) {
+            idx = 16;
+        }
+    }
+    app_var.opid_play_vol_sync = vol_sync_tab[idx];
 #endif
 }
 

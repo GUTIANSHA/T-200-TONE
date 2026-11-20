@@ -2159,11 +2159,11 @@ case KEY_VOICE_CHANGE:
 	 	use_ctl.menu_mode_cnt = 6;	 
 	 #endif		
 		
-        if (!tone_get_status()) 
-		{
-            app_audio_volume_up(1);
-            printf("common vol+: %d", app_audio_get_volume(APP_AUDIO_CURRENT_STATE));
-        }
+        // 不再依赖 __this->state 分支，强制走 MUSIC 状态的 set_volume。
+        // 这样在任何状态(提示音、通话、linein等)下按音量键都能正常调节 music_volume。
+        // set_volume 内部的 LED_SHOW_MAX_VOL 分支会自动用 led_vol 反推 music_volume。
+        app_audio_set_volume(APP_AUDIO_STATE_MUSIC, use_ctl.led_vol, 1);
+        printf("common vol+: %d", app_audio_get_volume(APP_AUDIO_STATE_MUSIC));
         if (app_audio_get_volume(APP_AUDIO_CURRENT_STATE) == app_audio_get_max_volume()) 
 		{
             if (tone_get_status() == 0) 
@@ -2191,6 +2191,12 @@ case KEY_VOICE_CHANGE:
 		if(use_ctl.led_vol>= LED_SHOW_MAX_VOL-1)
 			tone_play_by_path(tone_table[IDEX_TONE_MAX_VOL], 0);
 
+
+		#ifdef BT_SUPPORT_MUSIC_VOL_SYNC
+		bt_vol_sync_to_phone();
+		user_send_cmd_prepare(USER_CTRL_AVCTP_OPID_SEND_VOL, 0, NULL);
+		#endif
+		 
 
         UI_SHOW_MENU(MENU_MAIN_VOL, 1000, app_audio_get_volume(APP_AUDIO_CURRENT_STATE), NULL);
         break;
@@ -2233,8 +2239,9 @@ case KEY_VOICE_CHANGE:
 	 #endif		
 
 		
-        app_audio_volume_down(1);
-        printf("common vol-: %d", app_audio_get_volume(APP_AUDIO_CURRENT_STATE));
+        // 同样强制走 MUSIC 状态，绕开 WTONE 等状态的 early break。
+        app_audio_set_volume(APP_AUDIO_STATE_MUSIC, use_ctl.led_vol, 1);
+        printf("common vol-: %d", app_audio_get_volume(APP_AUDIO_STATE_MUSIC));
 #if (TCFG_DEC2TWS_ENABLE)
         bt_tws_sync_volume();
 #endif
@@ -2246,6 +2253,12 @@ case KEY_VOICE_CHANGE:
 
 	if(use_ctl.led_vol<= 0)
 		tone_play_by_path(tone_table[IDEX_TONE_MAX_VOL], 0);
+
+
+		#ifdef BT_SUPPORT_MUSIC_VOL_SYNC
+		bt_vol_sync_to_phone();
+		user_send_cmd_prepare(USER_CTRL_AVCTP_OPID_SEND_VOL, 0, NULL);
+		#endif
 
         UI_SHOW_MENU(MENU_MAIN_VOL, 1000, app_audio_get_volume(APP_AUDIO_CURRENT_STATE), NULL);
         break;

@@ -34,4 +34,5 @@ objs/apps/soundbox/task_manager/bt/vol_sync.c.o: \
   apps/soundbox/include/user_cfg_id.h apps/common/usb\usb_common_def.h \
   apps/soundbox/include/task_manager\bt/vol_sync.h \
   apps/soundbox/include\tone_player.h cpu/br23\audio_config.h \
-  apps/common/audio\sine_make.h include_lib/system\user_cfg.h
+  apps/common/audio\sine_make.h include_lib\btstack/avctp_user.h \
+  include_lib/btstack/btstack_typedef.h include_lib/system\user_cfg.h

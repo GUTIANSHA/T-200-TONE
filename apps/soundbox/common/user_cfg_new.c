@@ -936,7 +936,7 @@ void ENC_Encoder(void)
 					use_ctl.bEncordSw=5;
 				#endif				
 				app_common_key_var_event(KEY_Encoder_MENU_UP);
-				use_ctl.disable_key_cnt=3;					
+				use_ctl.disable_key_cnt=1;					
 			}
 
 			if ((!Aold)&&Bold)	//A1B1的前一个状态是A0B1

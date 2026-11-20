@@ -101,18 +101,4 @@ objs/apps/common/usb/host/usb_host.c.o: apps/common/usb/host/usb_host.c \
   apps/common/usb\usb_std_class_def.h \
   include_lib/btctrler\btcontroller_mode.h \
   apps/soundbox/include/user_cfg_id.h apps/common/usb\usb_common_def.h \
-  include_lib/system/device\device_drive.h apps/common/usb\usb_config.h \
-  include_lib/driver/cpu/br23\asm/usb.h \
-  include_lib/driver/device\usb/device/usb_stack.h \
-  include_lib/driver/device\usb/ch9.h \
-  include_lib/driver/device\usb/usb_phy.h \
-  include_lib/driver/device\usb/otg.h \
-  include_lib/driver/device\usb/host/usb_host.h \
-  apps/common/usb/host/usb_ctrl_transfer.h \
-  apps/common/usb/host/usb_storage.h \
-  include_lib/driver/device\usb/scsi.h \
-  apps/common/usb/host/usb_bulk_transfer.h apps/common/usb/host/adb.h \
-  apps/common/usb/host/aoa.h apps/common/usb/host/hid.h \
-  apps/common/usb/host/audio.h \
-  include_lib/driver/device\usb/device/uac_audio.h \
-  include_lib/system\debug.h
+  include_lib/system/device\device_drive.h

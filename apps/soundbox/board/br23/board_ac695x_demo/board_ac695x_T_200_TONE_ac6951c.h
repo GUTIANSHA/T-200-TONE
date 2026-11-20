@@ -13,7 +13,7 @@ GPIO PAGE:
 //-----------eq online adjust------------
 //#define SUPPORT_EQ_ONLINE_SET_DM_DP
 
-//#define SUPPORT_USB_DEBUG
+#define SUPPORT_USB_DEBUG
 
 
 #define SUPPORT_POWER_ON_AD_SHOW_DLY
@@ -1007,7 +1007,7 @@ AUDIO_LIN2_LR			(AUDIO_LIN2L_CH | AUDIO_LIN2R_CH)
 //#define AUDIO_PCM_DEBUG					  	//PCM串口调试，写卡通话数据
 
 //*********************************************************************************//
-//                                 UART配置                                        //
+//                         uar        UART配置                                        //
 //*********************************************************************************//
 #ifdef SUPPORT_USB_DEBUG
 #define TCFG_UART0_ENABLE					1 //ENABLE_THIS_MOUDLE                   //串口打印模块使能
@@ -1537,13 +1537,13 @@ DAC硬件上的连接方式,可选的配置：
 #define TCFG_EQ_ENABLE                      	1     //支持EQ功能,EQ总使能
 #if TCFG_EQ_ENABLE
 #define TCFG_BT_MUSIC_EQ_ENABLE             	1     //支持蓝牙音乐EQ
-#define TCFG_PHONE_EQ_ENABLE                		1     //支持通话近端EQ
+#define TCFG_PHONE_EQ_ENABLE                	1     //支持通话近端EQ
 #define TCFG_MUSIC_MODE_EQ_ENABLE           	1     //支持音乐模式EQ
 #define TCFG_LINEIN_MODE_EQ_ENABLE          	1     //支持linein近端EQ
 #define TCFG_FM_MODE_EQ_ENABLE              	1     //支持fm模式EQ
 #define TCFG_SPDIF_MODE_EQ_ENABLE           	1     //支持SPDIF模式EQ
 #define TCFG_PC_MODE_EQ_ENABLE              	1     //支持pc模式EQ
-#define TCFG_AUDIO_OUT_EQ_ENABLE			1 	  //高低音EQ
+#define TCFG_AUDIO_OUT_EQ_ENABLE				1 	  //高低音EQ
 #define TCFG_AUDIO_MIC_EFFECT_POST_EQ_ENABLE	0	  //MIC音效后置EQ使能(includes DRC)
 
 #define EQ_SECTION_MAX                      10 //eq 段数
