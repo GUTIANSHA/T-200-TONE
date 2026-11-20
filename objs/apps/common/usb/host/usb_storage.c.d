@@ -76,4 +76,5 @@ objs/apps/common/usb/host/usb_storage.c.o: \
   apps/soundbox/board/br23/board_ac695x_demo/board_ac695x_T_200_TONE_ac6951c.h \
   apps/common/usb\usb_std_class_def.h \
   include_lib/btctrler\btcontroller_mode.h \
-  apps/soundbox/include/user_cfg_id.h apps/common/usb\usb_common_def.h
+  apps/soundbox/include/user_cfg_id.h apps/common/usb\usb_common_def.h \
+  include_lib/system\debug.h

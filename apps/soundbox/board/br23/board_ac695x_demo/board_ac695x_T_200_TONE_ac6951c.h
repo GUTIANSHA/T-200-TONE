@@ -13,7 +13,7 @@ GPIO PAGE:
 //-----------eq online adjust------------
 //#define SUPPORT_EQ_ONLINE_SET_DM_DP
 
-#define SUPPORT_USB_DEBUG
+//#define SUPPORT_USB_DEBUG
 
 
 #define SUPPORT_POWER_ON_AD_SHOW_DLY

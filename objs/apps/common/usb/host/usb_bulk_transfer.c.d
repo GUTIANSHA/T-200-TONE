@@ -64,4 +64,4 @@ objs/apps/common/usb/host/usb_bulk_transfer.c.o: \
   apps/common/usb\usb_std_class_def.h \
   include_lib/btctrler\btcontroller_mode.h \
   apps/soundbox/include/user_cfg_id.h apps/common/usb\usb_common_def.h \
-  include_lib/system/device\device_drive.h
+  include_lib/system/device\device_drive.h include_lib/system\debug.h
